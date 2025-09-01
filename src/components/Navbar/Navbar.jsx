@@ -22,6 +22,15 @@ const Navbar = () => {
   const handleMenuItemClick = (sectionId) => {
     setActiveSection(sectionId);
     setIsOpen(false);
+
+    // Smooth scroll to section
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
 
   const menuItems = [
@@ -29,6 +38,7 @@ const Navbar = () => {
     { id: "skill", label: "Skill" },
     { id: "experience", label: "Experience" },
     { id: "work", label: "Work" },
+    ``,
   ];
 
   return (
@@ -36,7 +46,7 @@ const Navbar = () => {
       className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
         isScrolled
           ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
-          : "bg-transparent"
+          : "bg-[#050414] bg-opacity-90"
       }`}
     >
       <div className="text-white py-5 flex justify-between items-center">
@@ -100,6 +110,46 @@ const Navbar = () => {
           )}
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-[#050414] bg-opacity-95 backdrop-blur-md">
+          <ul className="flex flex-col space-y-4 px-[7vw] py-6 text-gray-300">
+            {menuItems.map((item) => (
+              <li
+                key={item.id}
+                className={`cursor-pointer hover:text-[#8245ec] ${
+                  activeSection === item.id ? "text-[#8245ec]" : ""
+                }`}
+              >
+                <button onClick={() => handleMenuItemClick(item.id)}>
+                  {item.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+
+          {/* Mobile Social Links */}
+          <div className="flex space-x-4 px-[7vw] pb-6">
+            <a
+              href="https://github.com/Manyathaaa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-[#8245ec]"
+            >
+              <FaGithub size={24} />
+            </a>
+            <a
+              href="http://www.linkedin.com/in/manyatha-m"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-[#8245ec]"
+            >
+              <FaLinkedin size={24} />
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
