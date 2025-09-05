@@ -12,11 +12,6 @@ export const skills = [
   { name: "CSS", icon: "/assets/tech_logo/css.png" },
   { name: "Git", icon: "/assets/tech_logo/git.png" },
   { name: "GitHub", icon: "/assets/tech_logo/github.png" },
-  { name: "Redux", icon: "/assets/tech_logo/redux.png" },
-  { name: "TypeScript", icon: "/assets/tech_logo/typescript.png" },
   { name: "Bootstrap", icon: "/assets/tech_logo/bootstrap.png" },
-  { name: "Material UI", icon: "/assets/tech_logo/materialui.png" },
-  { name: "Tailwind CSS", icon: "/assets/tech_logo/tailwindcss.png" },
   { name: "Next.js", icon: "/assets/tech_logo/nextjs.png" },
-  { name: "Spring Boot", icon: "/assets/tech_logo/springboot.png" },
 ];
