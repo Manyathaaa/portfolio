@@ -66,9 +66,9 @@ const About = () => {
           </div>
         </div>
         <div className="md:w-1/2 w-full flex justify-center items-center mt-12 md:mt-0">
-          <div className="w-64 h-64 rounded-full bg-gradient-to-br from-[#8245ec] via-[#2c5364] to-[#232526] p-2 shadow-2xl flex items-center justify-center">
+          <div className="w-80 h-80 rounded-full bg-gradient-to-br from-[#8245ec] via-[#2c5364] to-[#232526] p-2 shadow-2xl flex items-center justify-center">
             <img
-              src="src/assets/profile2.png"
+              src="/assets/portfolio_image.jpg"
               alt="Profile"
               className="w-full h-full object-cover rounded-full border-4 border-white shadow-xl"
             />
