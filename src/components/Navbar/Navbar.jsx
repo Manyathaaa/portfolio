@@ -16,7 +16,14 @@ const Navbar = () => {
       setIsScrolled(window.scrollY > 50);
 
       // Scroll spy logic
-      const sectionIds = ["about", "skill", "experience", "work", "education", "contact"];
+      const sectionIds = [
+        "about",
+        "skill",
+        "experience",
+        "work",
+        "education",
+        "contact",
+      ];
       let currentSection = "";
       for (let id of sectionIds) {
         const section = document.getElementById(id);
