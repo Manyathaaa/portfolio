@@ -38,7 +38,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                placeholder="Manyatha M"
+                placeholder="your name"
                 value={form.name}
                 onChange={handleChange}
                 required
@@ -47,7 +47,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="mailtomanyatha@gmail.com"
+                placeholder="your email"
                 value={form.email}
                 onChange={handleChange}
                 required
