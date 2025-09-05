@@ -14,8 +14,25 @@ const Navbar = () => {
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      // Scroll spy logic
+      const sectionIds = ["about", "skill", "experience", "work", "education", "contact"];
+      let currentSection = "";
+      for (let id of sectionIds) {
+        const section = document.getElementById(id);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 80 && rect.bottom > 80) {
+            currentSection = id;
+            break;
+          }
+        }
+      }
+      setActiveSection(currentSection);
     };
     window.addEventListener("scroll", handleScroll);
+    // Initial scroll spy check
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
