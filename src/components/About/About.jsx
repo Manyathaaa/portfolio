@@ -11,6 +11,7 @@ const About = () => {
         style={{ perspective: "1000px" }}
       >
         <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#8245ec] via-[#2c5364] to-[#232526] animate-gradient-move blur-md opacity-60"></div>
+        {/*blur-md opacity-60 => soft, diffused glow. */}
         <div className="relative bg-[#232526]/80 rounded-2xl shadow-2xl p-8 text-left backdrop-blur-md transition-transform duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(130,69,236,0.4)]">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8245ec] inline-block relative">
             Manyatha M
