@@ -24,7 +24,7 @@ const Contact = () => {
         style={{ perspective: "1000px" }}
       >
         <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#8245ec] via-[#2c5364] to-[#232526] animate-gradient-move blur-md opacity-60"></div>
-        <div className="relative bg-[#232526]/80 rounded-2xl shadow-2xl p-8 text-left backdrop-blur-md">
+        <div className="relative bg-[#232526]/80 rounded-2xl shadow-2xl p-8 text-left backdrop-blur-md transition duration-300 hover:scale-105 hover:bg-opacity-100 hover:shadow-[0_0_40px_#8245ec] hover:opacity-90">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8245ec] inline-block relative">
             Contact Me
             <span className="block h-1 w-16 mt-2 bg-gradient-to-r from-[#8245ec] via-[#2c5364] to-[#8245ec] rounded-full animate-pulse"></span>

@@ -4,16 +4,14 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center py-16 px-6 md:px-20 lg:px-40 text-white"
+      className="flex flex-col items-center justify-censter py-16 px-6 md:px-20 lg:px-40 text-white"
     >
       <div className="max-w-5xl w-full mx-auto flex flex-col md:flex-row items-center justify-between py-12 px-4 md:px-8">
         <div className="md:w-1/2 w-full flex flex-col justify-center items-start text-left">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-2 text-white">
-            Hi, I am
+            Hi, I am Manyatha
           </h1>
-          <h2 className="text-4xl md:text-6xl font-extrabold mb-2 text-[#8245ec]">
-            Manyatha M
-          </h2>
+          <h2 className="text-4xl md:text-6xl font-extrabold mb-2 text-[#8245ec]"></h2>
           <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
             I am a <span className="text-[#8245ec]">Fullstack Developer</span>
           </h3>
@@ -26,7 +24,7 @@ const About = () => {
             Node.js, Express, MongoDB, PostgreSQL, and more.
           </p>
           <a
-            href="/cv.pdf"
+            href="https://drive.google.com/file/d/1wb0zrO-cLinL5z_L8zqAyJSIb1XyYmiJ/view?usp=drivesdk"
             download
             className="inline-block px-8 py-4 rounded-full bg-[#8245ec] text-white font-bold text-lg shadow-lg hover:bg-[#a084e8] hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#8245ec]"
           >
@@ -70,7 +68,7 @@ const About = () => {
             <img
               src="/assets/portfolio_image.jpg"
               alt="Profile"
-              className="w-full h-full object-cover rounded-full border-4 border-white shadow-xl"
+              className="w-full h-full object-cover rounded-full border-4 border-white shadow-xl transition-transform duration-500 hover:scale-110 hover:rotate-3 hover:shadow-[0_0_40px_#8245ec]"
             />
           </div>
         </div>
