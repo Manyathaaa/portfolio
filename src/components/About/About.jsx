@@ -6,30 +6,33 @@ const About = () => {
       id="about"
       className="flex flex-col items-center justify-center py-16 px-6 md:px-20 lg:px-40 text-white"
     >
-      <div
-        className="max-w-xl w-full relative p-1"
-        style={{ perspective: "1000px" }}
-      >
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#8245ec] via-[#2c5364] to-[#232526] animate-gradient-move blur-md opacity-60"></div>
-        {/*blur-md opacity-60 => soft, diffused glow. */}
-        <div className="relative bg-[#232526]/80 rounded-2xl shadow-2xl p-8 text-left backdrop-blur-md transition-transform duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(130,69,236,0.4)]">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8245ec] inline-block relative">
+      <div className="max-w-5xl w-full mx-auto flex flex-col md:flex-row items-center justify-between py-12 px-4 md:px-8">
+        <div className="md:w-1/2 w-full flex flex-col justify-center items-start text-left">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-2 text-white">
+            Hi, I am
+          </h1>
+          <h2 className="text-4xl md:text-6xl font-extrabold mb-2 text-[#8245ec]">
             Manyatha M
-            <span className="block h-1 w-16 mt-2 bg-gradient-to-r from-[#8245ec] via-[#2c5364] to-[#8245ec] rounded-full animate-pulse"></span>
           </h2>
-          <p className="text-lg md:text-xl mb-6 leading-relaxed text-white/90">
-            I’m Manyatha M, a Computer Science and Engineering student
-            specializing in Cyber Security at Dayananda Sagar College of
-            Engineering. I have a strong passion for full-stack development and
-            enjoy building applications that are both scalable and secure. My
-            projects, including a Restaurant Management System and an E-commerce
-            platform, showcase my ability to design robust authentication
-            systems, role-based access, and real-time order management. I’m
-            skilled in JavaScript, C, C++, Python, React, Node.js, Express,
-            MongoDB, and PostgreSQL, with hands-on experience in developing REST
-            APIs and responsive frontends.
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+            I am a <span className="text-[#8245ec]">Fullstack Developer</span>
+          </h3>
+          <p className="text-lg md:text-xl mb-8 leading-relaxed text-white/80 max-w-lg">
+            I’m a full-stack developer and Computer Science student specializing
+            in Cyber Security at Dayananda Sagar College of Engineering. I have
+            a strong passion for building scalable, secure web applications. My
+            projects showcase robust authentication, role-based access, and
+            real-time management. Skilled in JavaScript, C, C++, Python, React,
+            Node.js, Express, MongoDB, PostgreSQL, and more.
           </p>
-          <div className="flex justify-start space-x-6 mt-6">
+          <a
+            href="/cv.pdf"
+            download
+            className="inline-block px-8 py-4 rounded-full bg-[#8245ec] text-white font-bold text-lg shadow-lg hover:bg-[#a084e8] hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#8245ec]"
+          >
+            DOWNLOAD CV
+          </a>
+          <div className="flex space-x-6 mt-8">
             <a
               href="https://github.com/Manyathaaa"
               target="_blank"
@@ -57,9 +60,18 @@ const About = () => {
                 width="32"
                 height="32"
               >
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.156 1.459-2.156 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.601v5.595z" />
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 0 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.156 1.459-2.156 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.601v5.595z" />
               </svg>
             </a>
+          </div>
+        </div>
+        <div className="md:w-1/2 w-full flex justify-center items-center mt-12 md:mt-0">
+          <div className="w-64 h-64 rounded-full bg-gradient-to-br from-[#8245ec] via-[#2c5364] to-[#232526] p-2 shadow-2xl flex items-center justify-center">
+            <img
+              src="src/assets/profile2.png"
+              alt="Profile"
+              className="w-full h-full object-cover rounded-full border-4 border-white shadow-xl"
+            />
           </div>
         </div>
       </div>
