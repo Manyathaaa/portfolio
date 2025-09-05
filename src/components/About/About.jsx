@@ -25,7 +25,8 @@ const About = () => {
           </p>
           <a
             href="https://drive.google.com/file/d/1wb0zrO-cLinL5z_L8zqAyJSIb1XyYmiJ/view?usp=drivesdk"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-8 py-4 rounded-full bg-[#8245ec] text-white font-bold text-lg shadow-lg hover:bg-[#a084e8] hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#8245ec]"
           >
             DOWNLOAD CV
