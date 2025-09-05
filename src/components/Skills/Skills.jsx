@@ -1,27 +1,6 @@
 import React from "react";
 
-const skills = [
-  { name: "JavaScript", icon: "../public/assets/tech_logo/javascript.png" },
-  { name: "React", icon: "../public/assets/tech_logo/reactjs.png" },
-  { name: "Node.js", icon: "../public/assets/tech_logo/nodejs.png" },
-  { name: "Express", icon: "../public/assets/tech_logo/express.png" },
-  { name: "MongoDB", icon: "../public/assets/tech_logo/mongodb.png" },
-  { name: "PostgreSQL", icon: "../public/assets/tech_logo/postgre.png" },
-  { name: "Python", icon: "../public/assets/tech_logo/python.png" },
-  { name: "C", icon: "../public/assets/tech_logo/c.png" },
-  { name: "C++", icon: "../public/assets/tech_logo/cpp.png" },
-  { name: "HTML", icon: "../public/assets/tech_logo/html.png" },
-  { name: "CSS", icon: "../public/assets/tech_logo/css.png" },
-  { name: "Git", icon: "../public/assets/tech_logo/git.png" },
-  { name: "GitHub", icon: "../public/assets/tech_logo/github.png" },
-  { name: "Redux", icon: "../public/assets/tech_logo/redux.png" },
-  { name: "TypeScript", icon: "../public/assets/tech_logo/typescript.png" },
-  { name: "Bootstrap", icon: "../public/assets/tech_logo/bootstrap.png" },
-  { name: "Material UI", icon: "../public/assets/tech_logo/materialui.png" },
-  { name: "Tailwind CSS", icon: "../public/assets/tech_logo/tailwindcss.png" },
-  { name: "Next.js", icon: "../public/assets/tech_logo/nextjs.png" },
-  { name: "Spring Boot", icon: "../public/assets/tech_logo/springboot.png" },
-];
+import { skills } from "../../constants/skills";
 
 const Skills = () => {
   return (
