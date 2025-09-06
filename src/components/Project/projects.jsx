@@ -11,13 +11,6 @@ const projects = [
     code: "https://github.com/Manyathaaa/ecommerce-app",
   },
   {
-    title: "Magica (Vercel)",
-    image: "/assets/work_logo/ecommerce.png",
-    description: "An alternate deployed version of the ecommerce platform.",
-    link: "https://e-commerce-sooty-delta-13.vercel.app/",
-    code: "https://github.com/Manyathaaa/ecommerce-app",
-  },
-  {
     title: "LinkedIn Clone",
     image: "/assets/work_logo/linkedIn-clone.png",
     description:
