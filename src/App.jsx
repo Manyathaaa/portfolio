@@ -7,6 +7,7 @@ import Contact from "./components/Contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Education from "./components/Education/Education.jsx";
 import Experience from "./components/Experience/Experience.jsx";
+import Project from "./components/Project/projects.jsx";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Education />
       <Contact />
       <Footer />
+      <Project />
     </div>
   );
 };

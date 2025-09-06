@@ -19,6 +19,7 @@ const Navbar = () => {
       const sectionIds = [
         "about",
         "skill",
+        "projects",
         "experience",
         "work",
         "education",
@@ -60,6 +61,7 @@ const Navbar = () => {
   const menuItems = [
     { id: "about", label: "About" },
     { id: "skill", label: "Skill" },
+    { id: "projects", label: "Projects" },
     { id: "experience", label: "Experience" },
     { id: "education", label: "Education" },
     { id: "contact", label: "Contact" },
