@@ -34,8 +34,10 @@ const Project = () => {
   return (
     <section
       id="project"
-      className="py-16 px-6 md:px-20 lg:px-40 bg-gradient-to-br from-[#0f2027] via-[#2c5364] to-[#8245ec] min-h-screen"
+      className="py-16 px-6 md:px-20 lg:px-40 min-h-screen w-full flex flex-col items-center justify-center text-white relative overflow-hidden"
     >
+      {/* Animated Gradient Background */}
+      <div className="absolute inset-0 -z-10 animate-gradient-move bg-gradient-to-br from-[#0f2027] via-[#2c5364] to-[#8245ec] opacity-90 blur-lg" />
       <h2 className="text-4xl md:text-5xl font-extrabold text-center text-white mb-12 drop-shadow-lg">
         My Projects
       </h2>
