@@ -2,7 +2,7 @@ import React from "react";
 
 const projects = [
   {
-    title: "Ecommerce Platform",
+    title: "Magica",
     image: "/assets/work_logo/ecommerce.png",
     description:
       "A modern ecommerce platform built with React, Tailwind, and Vite.",
@@ -15,7 +15,7 @@ const projects = [
     link: "https://urbi-fix.vercel.app/",
   },
   {
-    title: "Mini LinkedIn Clone",
+    title: "LinkedIn Clone",
     image: "/assets/work_logo/linkedIn-clone.png",
     description:
       "A LinkedIn-style networking platform built with React, featuring user authentication, profile management, and dynamic post feeds powered by backend APIs",
