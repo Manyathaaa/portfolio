@@ -9,18 +9,25 @@ const projects = [
     link: "https://e-commerce-sooty-delta-13.vercel.app/",
   },
   {
-    title: "Movie Recommendation App",
-    image: "/assets/work_logo/movie_rec.png",
-    description: "A movie recommendation app using React and TMDB API.",
-    link: "https://your-movie-app-link.com",
+    title: "URBI-FIX – Smart City Citizen Helpdesk",
+    image: "/assets/work_logo/urbifix.png",
+    description: "A smart city citizen helpdesk application built with React.",
+    link: "https://urbi-fix.vercel.app/",
   },
   {
-    title: "Image Search Engine",
-    image: "/assets/work_logo/image_search.png",
-    description: "Search images from Unsplash API with beautiful UI.",
-    link: "https://your-image-search-link.com",
+    title: "Mini LinkedIn Clone",
+    image: "/assets/work_logo/linkedIn-clone.png",
+    description:
+      "A LinkedIn-style networking platform built with React, featuring user authentication, profile management, and dynamic post feeds powered by backend APIs",
+    link: "https://linked-in-clone-green.vercel.app/",
   },
-  // Add more projects as needed
+  {
+    title: "Restaurant Node",
+    //image: "/assets/work_logo/restaurant_node.png",
+    description:
+      "A restaurant management application built with Node.js and Express.",
+    link: "https://restaurant-node-3w14.onrender.com/",
+  },
 ];
 
 const Project = () => {
@@ -41,7 +48,7 @@ const Project = () => {
             <img
               src={proj.image}
               alt={proj.title}
-              className="w-40 h-40 object-cover rounded-xl mb-6 shadow-lg transition-transform duration-500 hover:scale-110 hover:rotate-3"
+              className="w-80 h-40 object-cover rounded-xl mb-6 shadow-lg transition-transform duration-500 hover:scale-110 hover:rotate-3"
             />
             <h3 className="text-2xl font-bold text-[#8245ec] mb-2 text-center">
               {proj.title}
