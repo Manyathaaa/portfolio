@@ -7,7 +7,17 @@ const About = () => {
       className="flex flex-col items-center justify-censter py-16 px-6 md:px-20 lg:px-40 text-white"
     >
       <div className="max-w-5xl w-full mx-auto flex flex-col md:flex-row items-center justify-between py-12 px-4 md:px-8">
-        <div className="md:w-1/2 w-full flex flex-col justify-center items-start text-left">
+        {/* Profile image above intro on mobile, side-by-side on desktop */}
+        <div className="w-full flex justify-center items-center mb-8 md:mb-0 md:w-1/2 md:order-2">
+          <div className="w-80 h-80 rounded-full bg-gradient-to-br from-[#8245ec] via-[#2c5364] to-[#232526] p-2 shadow-2xl flex items-center justify-center">
+            <img
+              src="/assets/portfolio_image.jpg"
+              alt="Profile"
+              className="w-full h-full object-cover rounded-full border-4 border-white shadow-xl transition-transform duration-500 hover:scale-110 hover:rotate-3 hover:shadow-[0_0_40px_#8245ec]"
+            />
+          </div>
+        </div>
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-start text-left md:order-1">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-2 text-white">
             Hi, I am Manyatha
           </h1>
@@ -64,15 +74,7 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className="md:w-1/2 w-full flex justify-center items-center mt-12 md:mt-0">
-          <div className="w-80 h-80 rounded-full bg-gradient-to-br from-[#8245ec] via-[#2c5364] to-[#232526] p-2 shadow-2xl flex items-center justify-center">
-            <img
-              src="/assets/portfolio_image.jpg"
-              alt="Profile"
-              className="w-full h-full object-cover rounded-full border-4 border-white shadow-xl transition-transform duration-500 hover:scale-110 hover:rotate-3 hover:shadow-[0_0_40px_#8245ec]"
-            />
-          </div>
-        </div>
+        {/* Removed duplicate profile image section. Only one profile image is shown above the introduction for all layouts. */}
       </div>
     </section>
   );
