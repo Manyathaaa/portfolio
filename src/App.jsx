@@ -17,12 +17,12 @@ const App = () => {
       <Navbar />
       <About />
       <Skills />
+      <Project />
       <Work />
       {/* <Experience /> */}
       <Education />
       <Contact />
       <Footer />
-      <Project />
     </div>
   );
 };
