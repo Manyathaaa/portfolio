@@ -27,7 +27,7 @@ const projects = [
   },
   {
     title: "Restaurant Node",
-    image: "/assets/work_logo/restaurant_node.png",
+    image: "/assets/work_logo/resto.png",
     description:
       "A restaurant management application built with Node.js and Express.",
     link: "https://restaurant-node-3w14.onrender.com/",
