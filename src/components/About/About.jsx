@@ -34,7 +34,7 @@ const About = () => {
             Node.js, Express, MongoDB, PostgreSQL, and more.
           </p>
           <a
-            href="https://drive.google.com/file/d/1wb0zrO-cLinL5z_L8zqAyJSIb1XyYmiJ/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/15ewAqYSbdRlpuzjZg20Ku3scZs4zWMkX/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 rounded-full bg-[#8245ec] text-white font-bold text-lg shadow-lg hover:bg-[#a084e8] hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#8245ec]"
@@ -43,7 +43,7 @@ const About = () => {
           </a>
           <div className="flex space-x-6 mt-8">
             <a
-              href="https://github.com/Manyathaaa"
+            href="https://github.com/Manyathaaa"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#8245ec]"
