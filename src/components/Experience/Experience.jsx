@@ -14,15 +14,45 @@ const Experience = () => {
             <span className="block h-1 w-16 mt-2 bg-gradient-to-r from-[#8245ec] via-[#2c5364] to-[#8245ec] rounded-full animate-pulse"></span>
           </h2>
           <div className="mb-6">
-            <h3 className="text-xl font-semibold text-white/90">
-              GirlScript Summer of Code
-            </h3>
-            <p className="text-md text-white/70">Open Source Contributor</p>
-            <p className="text-md text-white/80 mt-2">Summer 2025</p>
-            <p className="text-md text-white/60 mt-2">
-              Contributed to open source projects, collaborated with developers,
-              and enhanced skills in teamwork, Git, and modern web technologies.
-            </p>
+            {/* Orange Essence Technologies */}
+            <article className="mb-6">
+              <h3 className="text-xl font-semibold text-white/90">
+                Orange Essence Technologies
+              </h3>
+              <p className="text-md text-white/70">Software Development Intern</p>
+              <p className="text-sm text-white/80 mt-1">October 2025 - Present • Remote</p>
+              <p className="text-md text-white/60 mt-3">
+                Node.js, React, MySQL, Redis, Telegram Bot API
+              </p>
+              <ul className="list-disc list-inside text-white/60 mt-3 space-y-2">
+                <li>
+                  Engineered and deployed a Telegram Bot used by over <strong>1,500+</strong> active users,
+                  integrating Redis caching to reduce response time by <strong>60%</strong> and handle
+                  <strong> 10K+</strong> daily requests.
+                </li>
+                <li>
+                  Designed and developed a full-stack web application using Express.js, React, and MySQL,
+                  achieving <strong>99.9% uptime</strong> and automating internal workflows.
+                </li>
+                <li>
+                  Optimized REST APIs and SQL queries, improving backend performance by <strong>40%</strong>
+                  and cutting server CPU utilization by <strong>30%</strong>.
+                </li>
+              </ul>
+            </article>
+
+            {/* Existing entry: GirlScript Summer of Code */}
+            <article>
+              <h3 className="text-xl font-semibold text-white/90">
+                GirlScript Summer of Code
+              </h3>
+              <p className="text-md text-white/70">Open Source Contributor</p>
+              <p className="text-md text-white/80 mt-2">Summer 2025</p>
+              <p className="text-md text-white/60 mt-2">
+                Contributed to open source projects, collaborated with developers,
+                and enhanced skills in teamwork, Git, and modern web technologies.
+              </p>
+            </article>
           </div>
         </div>
       </div>

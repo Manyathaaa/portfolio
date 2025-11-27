@@ -6,7 +6,7 @@ import Skills from "./components/Skills/Skills.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Education from "./components/Education/Education.jsx";
-//import Experience from "./components/Experience/Experience.jsx";
+import Experience from "./components/Experience/Experience.jsx";
 import Project from "./components/Project/projects.jsx";
 
 const App = () => {
@@ -42,7 +42,7 @@ const App = () => {
       <Skills />
       <Project />
       <Work />
-      {/* <Experience /> */}
+      <Experience />
       <Education />
       <Contact />
       <Footer />
