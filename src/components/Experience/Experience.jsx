@@ -1,63 +1,28 @@
 import React from "react";
 
-const Experience = () => {
-  return (
-    <section
-      id="experience"
-      className="flex flex-col items-center justify-center py-16 px-6 md:px-20 lg:px-40 text-white"
-    >
-      <div className="max-w-xl w-full relative p-1">
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#8245ec] via-[#2c5364] to-[#232526] animate-gradient-move blur-md opacity-60"></div>
-        <div className="relative bg-[#232526]/80 rounded-2xl shadow-2xl p-8 text-left backdrop-blur-md transition duration-300 hover:scale-105 hover:bg-opacity-100 hover:shadow-[0_0_40px_#8245ec] hover:opacity-90">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8245ec] inline-block relative">
-            Experience
-            <span className="block h-1 w-16 mt-2 bg-gradient-to-r from-[#8245ec] via-[#2c5364] to-[#8245ec] rounded-full animate-pulse"></span>
-          </h2>
-          <div className="mb-6">
-            {/* Orange Essence Technologies */}
-            <article className="mb-6">
-              <h3 className="text-xl font-semibold text-white/90">
-                Orange Essence Technologies
-              </h3>
-              <p className="text-md text-white/70">Software Development Intern</p>
-              <p className="text-sm text-white/80 mt-1">October 2025 - Present • Remote</p>
-              <p className="text-md text-white/60 mt-3">
-                Node.js, React, MySQL, Redis, Telegram Bot API
-              </p>
-              <ul className="list-disc list-inside text-white/60 mt-3 space-y-2">
-                <li>
-                  Engineered and deployed a Telegram Bot used by over <strong>1,500+</strong> active users,
-                  integrating Redis caching to reduce response time by <strong>60%</strong> and handle
-                  <strong> 10K+</strong> daily requests.
-                </li>
-                <li>
-                  Designed and developed a full-stack web application using Express.js, React, and MySQL,
-                  achieving <strong>99.9% uptime</strong> and automating internal workflows.
-                </li>
-                <li>
-                  Optimized REST APIs and SQL queries, improving backend performance by <strong>40%</strong>
-                  and cutting server CPU utilization by <strong>30%</strong>.
-                </li>
-              </ul>
-            </article>
-
-            {/* Existing entry: GirlScript Summer of Code */}
-            <article>
-              <h3 className="text-xl font-semibold text-white/90">
-                GirlScript Summer of Code
-              </h3>
-              <p className="text-md text-white/70">Open Source Contributor</p>
-              <p className="text-md text-white/80 mt-2">Summer 2025</p>
-              <p className="text-md text-white/60 mt-2">
-                Contributed to open source projects, collaborated with developers,
-                and enhanced skills in teamwork, Git, and modern web technologies.
-              </p>
-            </article>
+const Experience = () => (
+  <section id="experience" className="portfolio-section">
+    <div className="section-inner">
+      <p className="eyebrow">EXPERIENCE</p>
+      <h2 className="section-title">Building useful, reliable software</h2>
+      <article className="experience-card">
+        <div className="experience-heading">
+          <div>
+            <h3>Software Development Intern</h3>
+            <p className="accent-text">Orange Essence Technologies (OETech) · Remote · <a href="https://drive.google.com/file/d/1S8EqUiFAjhHqlYCLq_NDJR3vNB-mcPBt/view?usp=drivesdk" target="_blank" rel="noreferrer">View internship certificate ↗</a></p>
           </div>
+          <span className="date-pill">Oct 2025 — Apr 2026</span>
         </div>
-      </div>
-    </section>
-  );
-};
+        <p className="project-stack">Node.js · Express.js · React · MySQL · Redis · Telegram Bot API</p>
+        <ul className="resume-bullets">
+          <li>Developed Tickible, a Telegram-based ticketing bot supporting 150+ active users and 1K+ daily requests.</li>
+          <li>Implemented Redis caching, reducing response latency by 60%, and automated ticket creation, tracking, and resolution workflows.</li>
+          <li>Built a full-stack application using Express.js, React, and MySQL, achieving 99.9% uptime.</li>
+          <li>Optimized REST APIs and SQL queries, improving backend performance by 40% and reducing server CPU utilization by 30%.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+);
 
 export default Experience;

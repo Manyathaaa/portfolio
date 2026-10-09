@@ -1,32 +1,29 @@
 import React from "react";
 
-const Education = () => {
-  return (
-    <section
-      id="education"
-      className="flex flex-col items-center justify-center py-16 px-6 md:px-20 lg:px-40 text-white"
-    >
-      <div className="max-w-xl w-full relative p-1 transition-transform duration-500 hover:scale-105 hover:opacity-90">
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#8245ec] via-[#2c5364] to-[#232526] animate-gradient-move blur-md opacity-50 group-hover:opacity-80 transition-opacity duration-500"></div>
-        <div className="relative bg-[#232526]/80 rounded-2xl shadow-2xl p-8 text-left backdrop-blur-md group hover:bg-[#232526]/90 transition-all duration-500">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8245ec] inline-block relative">
-            Education
-            <span className="block h-1 w-16 mt-2 bg-gradient-to-r from-[#8245ec] via-[#2c5364] to-[#8245ec] rounded-full animate-pulse"></span>
-          </h2>
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold text-white/90">
-              Dayananda Sagar College of Engineering
-            </h3>
-            <p className="text-md text-white/70">Bangalore, India</p>
-            <p className="text-md text-white/80 mt-2">
-              Bachelor of Engineering, Cyber Security
-            </p>
-            <p className="text-md text-white/60">Year: 2023 - 2027</p>
+const Education = () => (
+  <section id="education" className="portfolio-section">
+    <div className="section-inner">
+      <p className="eyebrow">EDUCATION</p>
+      <h2 className="section-title">Academic background</h2>
+      <article className="education-card">
+        <div className="experience-heading">
+          <div>
+            <h3>Dayananda Sagar College of Engineering</h3>
+            <p className="accent-text">B.E. in Computer Science and Engineering (Cyber Security)</p>
           </div>
+          <span className="date-pill">2023 — 2027</span>
         </div>
+        <div className="education-meta">
+          <span>Visvesvaraya Technological University (VTU)</span>
+          <span>CGPA: 8.75 / 10</span>
+        </div>
+      </article>
+      <div className="subjects">
+        <h3>Core subjects</h3>
+        <p>Computer Networks · Network Security · Operating Systems · DBMS · Web Security · Cryptography · Digital Forensics</p>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default Education;

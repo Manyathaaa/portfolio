@@ -23,6 +23,7 @@ const Navbar = () => {
         "experience",
         //"work",
         "education",
+        "certifications",
         "contact",
       ];
       let currentSection = "";
@@ -64,12 +65,13 @@ const Navbar = () => {
     { id: "project", label: "Projects" },
     { id: "experience", label: "Experience" },
     { id: "education", label: "Education" },
+    { id: "certifications", label: "Certifications" },
     { id: "contact", label: "Contact" },
   ];
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
+      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] ${
         isScrolled
           ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
           : "bg-[#050414] bg-opacity-90"
@@ -78,11 +80,11 @@ const Navbar = () => {
       <div className="text-white py-5 flex justify-between items-center">
         {/* Logo */}
         <div className="text-lg font-semibold cursor-pointer">
-          <span className="text-[#8245ec]">&lt;</span>
+          <span className="text-[#69d7bd]">&lt;</span>
           <span className="text-white">Manyatha</span>
-          <span className="text-[#8245ec]"> </span>
+          <span className="text-[#69d7bd]"> </span>
           <span className="text-white">M</span>
-          <span className="text-[#8245ec]">&gt;</span>
+          <span className="text-[#69d7bd]">&gt;</span>
         </div>
 
         {/* Menu Items */}
@@ -124,12 +126,12 @@ const Navbar = () => {
         {/* Resume CTA */}
         <div className="hidden md:flex items-center ml-4">
           <a
-            href="/resume.pdf"
+            href="mailto:mailto.manyatha@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-4 inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-[#8245ec] to-[#2c5364] text-white shadow-lg hover:scale-105 transition-transform"
           >
-            Resume
+            Contact
           </a>
         </div>
 
@@ -167,12 +169,12 @@ const Navbar = () => {
             ))}
             <li className="cursor-pointer">
               <a
-                href="/resume.pdf"
+                href="mailto:mailto.manyatha@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#8245ec]"
               >
-                Resume
+                Contact
               </a>
             </li>
           </ul>
